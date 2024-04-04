@@ -116,7 +116,7 @@ export default function SharedModal({
                 </>
               )}
               <div className='absolute right-0 top-0 flex items-center gap-2 p-3 text-white'>
-                {navigation ? (
+                {/* {navigation ? (
                   <a
                     href={`https://www.instagram.com/brukstorget/`}
                     className='rounded-full bg-black/50 p-2 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white'
@@ -136,7 +136,7 @@ export default function SharedModal({
                   >
                     <Twitter className='h-5 w-5' />
                   </a>
-                )}
+                )} */}
                 {/* <button
                   onClick={() =>
                     downloadPhoto(
