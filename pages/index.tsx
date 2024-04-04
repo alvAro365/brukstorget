@@ -12,6 +12,8 @@ import getBase64ImageUrl from '../utils/generateBlurPlaceholder';
 import type { ImageProps } from '../utils/types';
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto';
 import Brukstorget from '../components/Icons/Brukstorget';
+import Instagram from '../components/Icons/Instagram';
+import Facebook from '../components/Icons/Facebook';
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter();
@@ -78,6 +80,20 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               rel='noreferrer'
             >
               Kontakt
+            </a>
+            <a
+              href='https://www.instagram.com/brukstorget/'
+              className='absolute bottom-3  left-3 rounded-full bg-transparent p-3 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white focus:outline-none'
+              target='_blank'
+            >
+              <Instagram />
+            </a>
+            <a
+              href='https://www.facebook.com/brukstorget/'
+              className='absolute bottom-3  left-14 rounded-full bg-transparent p-3 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white focus:outline-none'
+              target='_blank'
+            >
+              <Facebook />
             </a>
           </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
